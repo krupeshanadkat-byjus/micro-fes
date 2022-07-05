@@ -10,7 +10,7 @@ const HomeContent = () => {
 	}, [])
 
 	return (
-		<div className='grid grid-cols-4 gap-5'>
+		<div className='grid grid-cols-4 gap-10 pb-28'>
 			{products.map((product) => (
 				<div key={product.id}>
 					<img src={product.image} alt={product.name} className='h-32' />

@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from 'react'
+import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom'
 
 const Header = React.lazy(() => import('home/Header'))
@@ -6,6 +6,7 @@ import Footer from 'home/Footer'
 
 import './index.scss'
 import SafeComponent from './SafeComponent'
+import ProductContent from './ProductContent'
 
 const App = () => {
 	return (
@@ -16,7 +17,7 @@ const App = () => {
 				</Suspense>
 			</SafeComponent>
 			<div className='text-3xl mx-auto max-w-6xl'>
-				<div className='my-10'>Product Page Content</div>
+				<ProductContent />
 			</div>
 			<Footer />
 		</div>
