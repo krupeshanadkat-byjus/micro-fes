@@ -9,13 +9,15 @@ import SafeComponent from './SafeComponent'
 
 const App = () => {
 	return (
-		<div className='text-3xl mx-auto max-w-6xl'>
+		<div className='product-page-wrapper'>
 			<SafeComponent>
 				<Suspense fallback={<div>Loading...</div>}>
 					<Header />
 				</Suspense>
 			</SafeComponent>
-			<div className='my-10'>Product Page Content</div>
+			<div className='text-3xl mx-auto max-w-6xl'>
+				<div className='my-10'>Product Page Content</div>
+			</div>
 			<Footer />
 		</div>
 	)

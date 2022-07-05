@@ -2,8 +2,8 @@ import React from 'react'
 
 const Header = () => {
 	return (
-		<div className='p-5 bg-blue-500 text-white text-3xl font-bold'>
-			Fidget Spinner World 2
+		<div className='p-5 bg-gray-900 text-white text-xl font-bold mb-12'>
+			<div className='mx-auto max-w-6xl'>Fidget Spinner World</div>
 		</div>
 	)
 }
