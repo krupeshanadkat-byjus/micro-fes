@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 import { getProductById, currency } from 'home/products'
 
 const ProductContent = () => {
-	const id = 1
+	const { id } = useParams()
 	const [product, setProduct] = useState({})
 
 	useEffect(() => {
